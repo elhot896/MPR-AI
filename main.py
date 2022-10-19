@@ -24,7 +24,7 @@ def main():
     img_econding = face_recognition.face_encodings(rgb_img)[0]
 
     result = face_recognition.compare_faces(encodings, img_econding)
-    print("Are they the same person?", any(result))
+    print("Are they the same person?", result)
 
 
 if __name__ == "__main__":
